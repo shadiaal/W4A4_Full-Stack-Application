@@ -1,0 +1,217 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f7fc;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Loading state */
+.loading {
+  font-size: 18px;
+  font-weight: bold;
+  color: #007bff;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Error state */
+.error {
+  background-color: #ffebee;
+  color: #d32f2f;
+  padding: 15px;
+  border-left: 5px solid #d32f2f;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Retry Button */
+button.retry {
+  background-color: #d32f2f;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button.retry:hover {
+  background-color: #b71c1c;
+}
+
+/* Form */
+form {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
+  animation: fadeInUp 0.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form div {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+  text-align: left;
+  font-size: 16px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+}
+
+.error-message {
+  font-size: 14px;
+  color: #d32f2f;
+  margin-top: 5px;
+}
+
+/* Default Button */
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  width: 100%;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Product List */
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Product Card */
+.product-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+  padding: 20px;
+  background-color: #f3f4f6;
+  text-align: center;
+}
+
+.product-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.product-price {
+  font-size: 1.25rem;
+  color: #28a745;
+  margin-top: 10px;
+}
+
+.card-body {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+  background-color: #fafafa;
+}
+
+/* Buttons in Cards */
+.delete-btn, .order-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.delete-btn {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+  transform: scale(1.05);
+}
+
+.order-btn {
+  background-color: #3498db;
+  color: white;
+}
+
+.order-btn:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+
+/* Keyframes for Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

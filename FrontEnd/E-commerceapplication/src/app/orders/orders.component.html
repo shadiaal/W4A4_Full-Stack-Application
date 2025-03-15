@@ -1,0 +1,22 @@
+
+<table class="min-w-full bg-white shadow-lg rounded-lg overflow-hidden">
+  <thead>
+    <tr class="bg-gradient-to-r from-indigo-500 via-purple-600 to-pink-500 text-white text-left">
+      <th class="py-3 px-6 text-lg font-semibold">Order ID</th>
+      <th class="py-3 px-6 text-lg font-semibold">Order Date</th>
+      <th class="py-3 px-6 text-lg font-semibold">Total Price</th>
+      <th class="py-3 px-6 text-lg font-semibold">Quantity</th>
+      <th class="py-3 px-6 text-lg font-semibold">Customer</th>
+    </tr>
+  </thead>
+  <tbody class="text-gray-700">
+    <tr *ngFor="let order of orders$ | async" class="border-b border-gray-200 hover:bg-gray-100">
+      <td class="py-4 px-6 text-lg">{{ order.productId }}</td>
+      <td class="py-4 px-6 text-lg">{{ order.orderDate | date: 'shortDate' }}</td>
+      <td class="py-4 px-6 text-lg font-bold text-yellow-500">${{ order.totalPrice }}</td>
+      <td class="py-4 px-6 text-lg">{{ order.quantity }}</td>
+      <td class="py-4 px-6 text-lg">{{ order.customerName }}</td>
+    </tr>
+  </tbody>
+</table>
+

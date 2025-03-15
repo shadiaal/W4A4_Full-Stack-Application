@@ -1,0 +1,23 @@
+{
+  "Version": 1,
+  "Hash": "IG4BLhvXuTtBPJrLpnY1ua1pl6zy0DaTN37v/SniTLM=",
+  "Source": "OrderService",
+  "BasePath": "_content/OrderService",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "C:\\Users\\soosh\\Desktop\\Elm-Training Program\\Practice\\Week4\\W4Assigment_FullStackApplication\\W4A4_Full-Stack-Application\\BackEnd\\ProductService\\ProductService.csproj",
+      "Version": 2,
+      "Source": "ProductService",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
+    }
+  ],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
