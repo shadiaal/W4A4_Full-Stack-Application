@@ -10,7 +10,7 @@ body {
   min-height: 100vh;
 }
 
-/* Loading state */
+
 .loading {
   font-size: 18px;
   font-weight: bold;
@@ -18,7 +18,7 @@ body {
   animation: fadeIn 0.5s ease-in-out;
 }
 
-/* Error state */
+
 .error {
   background-color: #ffebee;
   color: #d32f2f;
@@ -32,7 +32,7 @@ body {
   animation: fadeIn 0.5s ease-in-out;
 }
 
-/* Retry Button */
+
 button.retry {
   background-color: #d32f2f;
   color: white;
@@ -47,7 +47,7 @@ button.retry:hover {
   background-color: #b71c1c;
 }
 
-/* Form */
+
 form {
   background: white;
   padding: 30px;
@@ -97,7 +97,7 @@ input:focus {
   margin-top: 5px;
 }
 
-/* Default Button */
+
 button {
   background-color: #007bff;
   color: white;
@@ -121,7 +121,7 @@ button:hover {
   background-color: #0056b3;
 }
 
-/* Product List */
+
 .product-list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -129,7 +129,7 @@ button:hover {
   padding: 20px;
 }
 
-/* Product Card */
+
 .product-card {
   background-color: white;
   border-radius: 12px;
@@ -168,7 +168,7 @@ button:hover {
   background-color: #fafafa;
 }
 
-/* Buttons in Cards */
+
 .delete-btn, .order-btn {
   padding: 10px 20px;
   font-size: 1rem;
@@ -199,7 +199,7 @@ button:hover {
   transform: scale(1.05);
 }
 
-/* Keyframes for Animations */
+
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
