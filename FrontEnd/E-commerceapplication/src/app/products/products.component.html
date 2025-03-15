@@ -5,7 +5,7 @@
   <button (click)="onRetry()">Retry</button>
 </div>
 
-<!-- Add New Product Form using Reactive Form -->
+
 <form [formGroup]="productForm" (ngSubmit)="onAddProduct()">
   <div>
     <label for="name">Product Name</label>
@@ -25,15 +25,6 @@
 
   <button type="submit" [disabled]="productForm.invalid">Add Product</button>
 </form>
-
-<!-- 
-<ul *ngIf="!(isLoading$ | async) && !(error$ | async)">
-  <li *ngFor="let product of products$ | async">
-    {{ product.name }} - {{ product.price }}$
-    <button (click)="onDelete(product.id)">Delete</button>
-    <button (click)="onPlaceOrder(product)">Order Now</button>
-  </li>
-</ul> -->
 
 
 
