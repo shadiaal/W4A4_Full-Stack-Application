@@ -11,18 +11,6 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 builder.Services.AddHttpClient<ProductController>();
 
-// Enable CORS
-//builder.Services.AddCors(options =>
-//{
-//    options.AddPolicy("AllowApp", policy =>
-//    {
-//        policy.WithOrigins("http://localhost:4200/", "http://localhost:5205")
-//              .AllowAnyHeader()
-//              .AllowAnyMethod();
-//    });
-//});
-
-
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll", policy =>
